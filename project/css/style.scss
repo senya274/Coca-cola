@@ -1,0 +1,205 @@
+   
+   $grey: #717171;
+   $gold: #F2DEAB;
+   $white:  #fff;
+   
+   
+   
+   
+   body{
+    font-family: 'Anton', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Vollkorn', serif;
+letter-spacing: 0.1em;
+font-size: 20px;
+}
+
+p, a{
+    letter-spacing: 0.1em;
+}
+a{
+    text-decoration: none;
+
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 900;
+    line-height: 1.27em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    z-index: 10
+}
+
+.header{
+    background: #000;
+padding-top: 74px;
+position: relative;
+color:$white;
+
+&::after{
+    content: "";
+    display: block;
+    background: url(/img/girl-coce.jpg) no-repeat right top / cover;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+    }
+}
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+width: 830px;
+
+}
+
+
+
+.logo {
+}
+
+
+
+
+.others {
+color: $grey;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 11px;
+font-weight: 700;
+display: flex;
+    align-items: center;
+&::before{
+        content: '';
+        display: block;
+        background: url(/img/botle.svg) no-repeat;
+        width: 19px;
+        height: 19px;
+        margin-right: 10px;
+    }
+}
+
+
+.offer {
+text-transform: uppercase;
+margin-left:  79px;
+margin-top: 110px;
+}
+
+
+.offer__intro {
+font-weight: 700;
+font-size: 20px;
+}
+
+
+.offer__title {
+font-weight: 900;
+font-size: 40px;
+color: $gold;
+}
+
+
+.offer__outro {
+font-weight: 700;
+}
+
+.slides {
+    width: 467px;
+    margin-left:  79px;
+    margin-top: 110px;
+}
+.slides__item {
+
+}
+.slides__item_covid {
+    background: url(/img/fon.png) no-repeat center top / cover;
+padding: 69px 90px 58px;
+
+}
+
+
+.slides__title_big {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.slides__item_desc{
+    background: #E12222;
+    padding: 51px;
+}
+
+.slides__title_small {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.slides__text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.promo{
+    background: black;
+    border-radius: 50%;
+    width: 604px;
+    height: 604px;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    margin-top: -302px;
+    margin-left: 570px;
+    z-index: 9;
+
+    &::before{
+        content: '';
+        display: block;
+        border: 1px solid #303030;
+        border-radius: 50%;
+        width: 525px;
+        height: 525px;
+        position: absolute;
+        left: 50%;
+        margin-left: -262px;
+        top: 50%;
+        margin-top: -262px;
+    }
+
+    &::after{
+        content: '';
+        display: block;
+        background: url(/img/blur.png) no-repeat center center;
+        width: 530px;
+        height: 530px;
+        position: absolute;
+        top: 50%;
+        margin-top: -265px;
+        left: 50%;
+        margin-left: -265px;
+        color: #F2DEAB;
+    }
+}
+.promo img{
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -260px;
+    top: 50%;
+    margin-top: -190px;
+}
